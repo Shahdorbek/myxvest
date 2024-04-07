@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="./img/sh.png" type="text" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Shahdorbek</title>
+  </head>
+  <body>
+    <form class="form" id="form" action="" onsubmit=" return sendtelegram()">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Ismingiz"
+        required
+      />
+      <input
+        type="tel"
+        name="number"
+        id="nomer"
+        placeholder="+998:"
+        minlength="9"
+        maxlength="13"
+        min="9"
+        max="13"
+        required
+      />
+      <textarea
+        name="message"
+        id="message"
+        cols="45"
+        rows="100"
+        placeholder="Xabar qoldiring"
+        required
+      ></textarea>
+      <br />
+      <input type="submit" value="Yuborish" id="btn" />
+    </form>
+    <div class="app" id="app"></div>
+    <script src="./js/sendtelegram.js"></script>
+  </body>
+</html>
